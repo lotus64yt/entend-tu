@@ -7,9 +7,9 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#", label: "Accueil" },
-    { href: "#", label: "About" },
-    { href: "#", label: "Contact" },
+    { href: "#", label: "Explications" },
+    { href: "#", label: "Origines" },
+    { href: "#", label: "Personalitée" },
   ];
 
   const toggleMobileMenu = () => {
