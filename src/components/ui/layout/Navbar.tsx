@@ -3,18 +3,29 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { useTranslation } from "@/hooks/useTranslation";
+import { useLocale } from "@/contexts/LocaleContext";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
+  const { locale, setLocale } = useLocale();
 
   const navLinks = [
-    { href: "/#explications", label: "Explications" },
-    { href: "/origines", label: "Origines" },
-    { href: "/personalite", label: "Personalitée" },
+    { href: "/#explications", label: t("navbar.explanations") },
+    { href: "/origines", label: t("navbar.origins") },
+    { href: "/personalite", label: t("navbar.personality") },
   ];
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleLocaleChange = (newLocale: string) => {
+    setLocale(newLocale);
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
   };
 
   return (
@@ -29,7 +40,7 @@ export default function Navbar() {
               aria-expanded={isMobileMenuOpen}
               onClick={toggleMobileMenu}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{t("navbar.open.menu")}</span>
               <svg
                 className={`block h-6 w-6 ${isMobileMenuOpen ? "hidden" : "block"}`}
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,9 +65,9 @@ export default function Navbar() {
                 width={32}
                 height={32}
                 className="rounded-full"
-                alt="Logo"
+                alt={t("navbar.logo.alt")}
               />
-              M{"'"}entend-tu ?
+              {t("navbar.brand")}
             </Link>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
@@ -72,6 +83,19 @@ export default function Navbar() {
               </div>
             </div>
           </div>
+          <div className="hidden sm:ml-6 sm:flex sm:items-center">
+            <div className="relative">
+              <select
+                value={locale}
+                onChange={(e) => handleLocaleChange(e.target.value)}
+                className="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none"
+                aria-label={t("locale.switcher.label")}
+              >
+                <option value="fr">{t("locale.fr")}</option>
+                <option value="en">{t("locale.en")}</option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -84,16 +108,16 @@ export default function Navbar() {
                 width={32}
                 height={32}
                 className="rounded-full"
-                alt="Logo"
+                alt={t("navbar.logo.alt")}
               />
-              M{"'"}entend-tu ?
+              {t("navbar.brand")}
             </div>
             <button
               type="button"
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={toggleMobileMenu}
             >
-              <span className="sr-only">Close main menu</span>
+              <span className="sr-only">{t("navbar.close.menu")}</span>
               <svg
                 className="block h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,11 +141,25 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                onClick={toggleMobileMenu}
+                onClick={() => {
+                  toggleMobileMenu();
+                }}
               >
                 {link.label}
               </a>
             ))}
+            <div className="mt-4">
+              <label htmlFor="locale-select-mobile" className="sr-only">{t("locale.switcher.label")}</label>
+              <select
+                id="locale-select-mobile"
+                value={locale}
+                onChange={(e) => handleLocaleChange(e.target.value)}
+                className="bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium focus:outline-none w-full text-center"
+              >
+                <option value="fr">{t("locale.fr")}</option>
+                <option value="en">{t("locale.en")}</option>
+              </select>
+            </div>
           </div>
         </div>
       )}
