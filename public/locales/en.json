@@ -10,6 +10,13 @@
   "locale.en": "English",
   "locale.fr": "French",
 
+  "theme.switcher.label": "Theme:",
+  "theme.default": "Default",
+  "theme.nintendo": "Nintendo",
+  "theme.dark": "Dark",
+  "theme.light": "Light",
+  "theme.halloween": "Halloween",
+
   "home.title": "Can you hear me? <span class=\"text-blue-500\">Yes</span>, but sometimes <span class=\"text-red-500\">no</span>.",
   "home.description": "In this site, we will see the origins of the hearing disorder and an example of a known person affected by this disorder.",
   "home.what_is_deafness.title": "What is deafness?",

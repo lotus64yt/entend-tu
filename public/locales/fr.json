@@ -10,6 +10,13 @@
   "locale.en": "Anglais",
   "locale.fr": "Français",
 
+  "theme.switcher.label": "Thème :",
+  "theme.default": "Défaut",
+  "theme.nintendo": "Nintendo",
+  "theme.dark": "Sombre",
+  "theme.light": "Clair",
+  "theme.halloween": "Halloween",
+
   "home.title": "M'entends-tu ? <span class=\"text-blue-500\">Oui</span>, mais parfois <span class=\"text-red-500\">non</span>.",
   "home.description": "Dans ce site, nous verrons les origines du trouble de la surdité et un exemple de personne connue étant atteint par ce trouble.",
   "home.what_is_deafness.title": "Qu'est-ce que la surdité ?",
