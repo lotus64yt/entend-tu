@@ -1,7 +1,21 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: "#", label: "Accueil" },
+    { href: "#", label: "About" },
+    { href: "#", label: "Contact" },
+  ];
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav className="w-full bg-gray-800 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -11,11 +25,12 @@ export default function Navbar() {
               type="button"
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
-              aria-expanded="false"
+              aria-expanded={isMobileMenuOpen}
+              onClick={toggleMobileMenu}
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className="block h-6 w-6"
+                className={`block h-6 w-6 ${isMobileMenuOpen ? "hidden" : "block"}`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -44,52 +59,71 @@ export default function Navbar() {
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Accueil
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  About
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Contact
-                </a>
+                {navLinks.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    {link.label}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="sm:hidden" id="mobile-menu">
-        <div className="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Contact
-          </a>
+      {isMobileMenuOpen && (
+        <div className="sm:hidden fixed inset-0 bg-gray-800 z-50 flex flex-col" id="mobile-menu">
+          <div className="flex items-center justify-between h-16 px-2 sm:px-6 lg:px-8 border-b border-gray-700">
+            <div className="flex gap-4 items-center text-2xl font-bold text-white">
+              <Image
+                src="/favicon.ico"
+                width={32}
+                height={32}
+                className="rounded-full"
+                alt="Logo"
+              />
+              M{"'"}entend-tu ?
+            </div>
+            <button
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              onClick={toggleMobileMenu}
+            >
+              <span className="sr-only">Close main menu</span>
+              <svg
+                className="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col items-center flex-grow justify-center">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                onClick={toggleMobileMenu}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 }
