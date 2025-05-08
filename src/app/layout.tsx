@@ -18,6 +18,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "M'entends-tu ?",
   description: "Un site pour comprendre la surdité.",
+  keywords: [
+    "surdité",
+    "comprendre la surdité",
+    "troubles auditifs",
+    "perte auditive",
+    "Beethoven surdité",
+    "causes surdité",
+    "types de surdité",
+    "vivre avec la surdité",
+    "ressources surdité",
+    "informations surdité",
+    "santé auditive",
+  ],
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -47,9 +60,19 @@ export const metadata: Metadata = {
   },
   robots: {
     index: true,
-    follow: true
+    follow: true,
   },
-}
+  authors: [{ name: "LMCGroup" }],
+  publisher: "LMCGroup",
+  alternates: {
+    canonical: "https://lmcgroup.xyz/",
+    languages: {
+      "en-US": "https://lmcgroup.xyz/en",
+      "fr-FR": "https://lmcgroup.xyz/fr",
+    },
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -61,9 +84,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         <LocaleProvider>
-            <Navbar />
-            <main className="flex-grow">{children}</main>
-            <Footer />
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
         </LocaleProvider>
       </body>
     </html>
