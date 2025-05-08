@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -47,7 +48,7 @@ export default function Navbar() {
             </button>
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex gap-4 items-center text-2xl font-bold text-white">
+            <Link className="flex gap-4 items-center text-2xl font-bold text-white" href="/">
               <Image
                 src="/favicon.ico"
                 width={32}
@@ -56,7 +57,7 @@ export default function Navbar() {
                 alt="Logo"
               />
               M{"'"}entend-tu ?
-            </div>
+            </Link>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
                 {navLinks.map((link) => (
