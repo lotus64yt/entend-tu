@@ -14,6 +14,7 @@ export default function Home() {
               M{"'"}entends-tu ? <span className="text-blue-500">Oui</span>,
               mais parfois <span className="text-red-500">non</span>.
             </h1>
+            <div id={"explications"} />
             <p className="text-zinc-300 text-center">
               Dans ce site, nous verons les origines du trouble de la surditée
               et un exemple de personne connue etant atteint par ce trouble.
