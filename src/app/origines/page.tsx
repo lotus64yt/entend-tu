@@ -25,6 +25,8 @@ export default function OriginesPage() {
           <Article
             title={t("origins.genetic.title")}
             content={t("origins.genetic.content")}
+            imageUrl="/images/placeholder-dna.jpg" // Exemple d'URL d'image
+            imageAlt={t("origins.genetic.image_alt")}
           />
         </FadeIn>
 
@@ -32,6 +34,8 @@ export default function OriginesPage() {
           <Article
             title={t("origins.congenital.title")}
             content={t("origins.congenital.content")}
+            imageUrl="/images/placeholder-newborn.jpg" // Exemple d'URL d'image
+            imageAlt={t("origins.congenital.image_alt")}
           />
         </FadeIn>
 
@@ -39,6 +43,8 @@ export default function OriginesPage() {
           <Article
             title={t("origins.infectious.title")}
             content={t("origins.infectious.content")}
+            imageUrl="/images/placeholder-virus.jpg" // Exemple d'URL d'image
+            imageAlt={t("origins.infectious.image_alt")}
           />
         </FadeIn>
 
@@ -46,6 +52,8 @@ export default function OriginesPage() {
           <Article
             title={t("origins.traumatic.title")}
             content={t("origins.traumatic.content")}
+            imageUrl="/images/placeholder-head-trauma.jpg" // Exemple d'URL d'image
+            imageAlt={t("origins.traumatic.image_alt")}
           />
         </FadeIn>
 
@@ -53,6 +61,8 @@ export default function OriginesPage() {
           <Article
             title={t("origins.age_related.title")}
             content={t("origins.age_related.content")}
+            imageUrl="/images/placeholder-elderly-ear.jpg" // Exemple d'URL d'image
+            imageAlt={t("origins.age_related.image_alt")}
           />
         </FadeIn>
 
@@ -60,6 +70,8 @@ export default function OriginesPage() {
           <Article
             title={t("origins.drug_induced.title")}
             content={t("origins.drug_induced.content")}
+            imageUrl="/images/placeholder-pills.jpg" // Exemple d'URL d'image
+            imageAlt={t("origins.drug_induced.image_alt")}
           />
         </FadeIn>
       </main>

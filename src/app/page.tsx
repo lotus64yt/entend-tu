@@ -26,6 +26,8 @@ export default function Home() {
           <Article
             title={t("home.what_is_deafness.title")}
             content={t("home.what_is_deafness.content")}
+            imageUrl="/images/placeholder-auditory-system.jpg" // Exemple d'URL d'image
+            imageAlt={t("home.what_is_deafness.image_alt")}
           />
         </FadeIn>
       </main>

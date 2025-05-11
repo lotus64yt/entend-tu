@@ -25,6 +25,8 @@ export default function BeethovenPage() {
           <Article
             title={t("personality.who_was_beethoven.title")}
             content={t("personality.who_was_beethoven.content")}
+            imageUrl="/images/beethoven_portrait.webp"
+            imageAlt={t("personality.who_was_beethoven.image_alt")}
           />
         </FadeIn>
 
@@ -32,6 +34,8 @@ export default function BeethovenPage() {
           <Article
             title={t("personality.origins_of_deafness.title")}
             content={t("personality.origins_of_deafness.content")}
+            imageUrl="/images/ear_anatomy.webp"
+            imageAlt={t("personality.origins_of_deafness.image_alt")}
           />
         </FadeIn>
 
