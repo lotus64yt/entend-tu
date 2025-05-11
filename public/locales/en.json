@@ -46,5 +46,14 @@
   "personality.how_he_overcame.title": "How did he overcome his handicap?",
   "personality.how_he_overcame.content": "Despite his hearing loss, Beethoven continued to compose thanks to his exceptional musical memory. He used conversation notebooks to communicate, rested his head against the piano to feel the vibrations, and visualized the sounds in his mind. His 9th symphony, composed when he was totally deaf, is a universal masterpiece.",
   "personality.other_facts.title": "Other notable facts",
-  "personality.other_facts.content": "• Beethoven transformed classical music with powerful, emotional, and innovative works.\\n• He struggled with depression and isolation related to his deafness, as evidenced by his Heiligenstadt Testament.\\n• His journey is a source of inspiration for millions of people with disabilities."
+  "personality.other_facts.content": "• Beethoven transformed classical music with powerful, emotional, and innovative works.\\n• He struggled with depression and isolation related to his deafness, as evidenced by his Heiligenstadt Testament.\\n• His journey is a source of inspiration for millions of people with disabilities.",
+
+  "sources.title": "Sources",
+  "sources.description": "Here are some resources to learn more about deafness:",
+  "sources.who.name": "World Health Organization (WHO)",
+  "sources.who.description": "The WHO provides comprehensive information on hearing loss and deafness, including prevention and treatment.",
+  "sources.nad.name": "National Association of the Deaf (NAD)",
+  "sources.nad.description": "The NAD advocates for the rights of deaf and hard-of-hearing individuals and offers various resources.",
+  "sources.cdc.name": "Centers for Disease Control and Prevention (CDC)",
+  "sources.cdc.description": "The CDC offers insights into hearing loss, its causes, and public health strategies to address it."
 }

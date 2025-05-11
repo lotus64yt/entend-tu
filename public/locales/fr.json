@@ -46,5 +46,14 @@
   "personality.how_he_overcame.title": "Comment a-t-il surmonté son handicap ?",
   "personality.how_he_overcame.content": "Malgré la perte auditive, Beethoven a continué à composer grâce à sa mémoire musicale exceptionnelle. Il utilisait des carnets de conversation pour communiquer, posait sa tête contre le piano pour ressentir les vibrations, et visualisait les sons dans son esprit. Sa 9e symphonie, composée alors qu'il était totalement sourd, est un chef-d'œuvre universel.",
   "personality.other_facts.title": "Autres faits marquants",
-  "personality.other_facts.content": "• Beethoven a transformé la musique classique avec des œuvres puissantes, émotionnelles et innovantes.\n• Il a lutté contre la dépression et l’isolement liés à sa surdité, comme en témoigne son Testament de Heiligenstadt.\n• Son parcours est une source d’inspiration pour des millions de personnes en situation de handicap."
+  "personality.other_facts.content": "• Beethoven a transformé la musique classique avec des œuvres puissantes, émotionnelles et innovantes.\n• Il a lutté contre la dépression et l’isolement liés à sa surdité, comme en témoigne son Testament de Heiligenstadt.\n• Son parcours est une source d’inspiration pour des millions de personnes en situation de handicap.",
+
+  "sources.title": "Sources",
+  "sources.description": "Voici quelques ressources pour en savoir plus sur la surdité :",
+  "sources.who.name": "Organisation mondiale de la santé (OMS)",
+  "sources.who.description": "L'OMS fournit des informations complètes sur la perte auditive et la surdité, y compris la prévention et le traitement.",
+  "sources.nad.name": "Association nationale des sourds (NAD)",
+  "sources.nad.description": "La NAD défend les droits des personnes sourdes et malentendantes et propose diverses ressources.",
+  "sources.cdc.name": "Centres pour le contrôle et la prévention des maladies (CDC)",
+  "sources.cdc.description": "Les CDC offrent des informations sur la perte auditive, ses causes et les stratégies de santé publique pour y faire face."
 }

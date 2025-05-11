@@ -11,6 +11,7 @@ export default function Navbar() {
     { href: "/#explications", label: "Explications" },
     { href: "/origines", label: "Origines" },
     { href: "/personalite", label: "Personalitée" },
+    { href: "/sources", label: "Sources" }, // Added link to Sources page
   ];
 
   const toggleMobileMenu = () => {
