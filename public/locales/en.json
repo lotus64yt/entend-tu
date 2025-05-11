@@ -55,5 +55,9 @@
   "sources.nad.name": "National Association of the Deaf (NAD)",
   "sources.nad.description": "The NAD advocates for the rights of deaf and hard-of-hearing individuals and offers various resources.",
   "sources.cdc.name": "Centers for Disease Control and Prevention (CDC)",
-  "sources.cdc.description": "The CDC offers insights into hearing loss, its causes, and public health strategies to address it."
+  "sources.cdc.description": "The CDC offers insights into hearing loss, its causes, and public health strategies to address it.",
+  "sources.nidcd.name": "National Institute on Deafness and Other Communication Disorders (NIDCD)",
+  "sources.nidcd.description": "The NIDCD conducts and supports research on hearing, balance, taste, smell, voice, speech, and language.",
+  "sources.actiononhearingloss.name": "Action on Hearing Loss (RNID)",
+  "sources.actiononhearingloss.description": "RNID provides support and information for people with hearing loss and tinnitus in the UK."
 }

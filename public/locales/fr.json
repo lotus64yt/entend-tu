@@ -55,5 +55,9 @@
   "sources.nad.name": "Association nationale des sourds (NAD)",
   "sources.nad.description": "La NAD défend les droits des personnes sourdes et malentendantes et propose diverses ressources.",
   "sources.cdc.name": "Centres pour le contrôle et la prévention des maladies (CDC)",
-  "sources.cdc.description": "Les CDC offrent des informations sur la perte auditive, ses causes et les stratégies de santé publique pour y faire face."
+  "sources.cdc.description": "Les CDC offrent des informations sur la perte auditive, ses causes et les stratégies de santé publique pour y faire face.",
+  "sources.nidcd.name": "Institut national sur la surdité et autres troubles de la communication (NIDCD)",
+  "sources.nidcd.description": "Le NIDCD mène et soutient des recherches sur l'audition, l'équilibre, le goût, l'odorat, la voix, la parole et le langage.",
+  "sources.actiononhearingloss.name": "Action sur la perte auditive (RNID)",
+  "sources.actiononhearingloss.description": "RNID fournit un soutien et des informations aux personnes atteintes de perte auditive et d'acouphènes au Royaume-Uni."
 }

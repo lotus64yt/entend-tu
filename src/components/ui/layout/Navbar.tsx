@@ -6,7 +6,7 @@ import React, { useState } from "react";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  
   const navLinks = [
     { href: "/#explications", label: "Explications" },
     { href: "/origines", label: "Origines" },
@@ -65,7 +65,7 @@ export default function Navbar() {
               M{"'"}entend-tu ?
             </Link>
             <div className="hidden sm:block sm:ml-6">
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 items-center">
                 {navLinks.map((link) => (
                   <a
                     key={link.label}
