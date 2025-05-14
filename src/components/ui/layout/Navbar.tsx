@@ -6,7 +6,6 @@ import React, { useState } from "react";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
 
   const navLinks = [
     { href: "/#explications", label: "Explications" },
