@@ -59,5 +59,14 @@
   "sources.nidcd.name": "Institut national sur la surdité et autres troubles de la communication (NIDCD)",
   "sources.nidcd.description": "Le NIDCD mène et soutient des recherches sur l'audition, l'équilibre, le goût, l'odorat, la voix, la parole et le langage.",
   "sources.actiononhearingloss.name": "Action sur la perte auditive (RNID)",
-  "sources.actiononhearingloss.description": "RNID fournit un soutien et des informations aux personnes atteintes de perte auditive et d'acouphènes au Royaume-Uni."
+  "sources.actiononhearingloss.description": "RNID fournit un soutien et des informations aux personnes atteintes de perte auditive et d'acouphènes au Royaume-Uni.",
+
+  "myths.title": "Mythes sur la surdité",
+  "myths.description": "Déconstruisons quelques idées reçues courantes sur la surdité.",
+  "myths.myth3.name": "Toutes les personnes sourdes lisent sur les lèvres.",
+  "myths.myth3.description": "La lecture labiale est une compétence qui varie considérablement d'un individu à l'autre et n'est pas universellement efficace ni utilisée par toutes les personnes sourdes. Elle peut être difficile et ne fournit souvent qu'une compréhension partielle.",
+  "myths.myth4.name": "La surdité est un trouble d'apprentissage.",
+  "myths.myth4.description": "La surdité est une déficience sensorielle, et non un trouble d'apprentissage. Les personnes sourdes ont la même étendue d'intelligence et de capacités d'apprentissage que les personnes entendantes, bien qu'elles puissent nécessiter des méthodes de communication ou des aménagements différents.",
+  "myths.myth5.name": "Les appareils auditifs restaurent une audition normale.",
+  "myths.myth5.description": "Les appareils auditifs amplifient les sons, les rendant plus accessibles, mais ils ne restaurent pas l'audition à un niveau « normal » ni ne guérissent la surdité. L'efficacité des appareils auditifs varie en fonction du type et du degré de la perte auditive."
 }

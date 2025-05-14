@@ -43,9 +43,17 @@ export default function SourcesPage() {
         <FadeIn delay={0.3}>
           <ul className="flex flex-col gap-8">
             {sources.map((source, index) => (
-              <li key={index} className="bg-zinc-800 p-6 rounded-lg shadow-lg">
+              <li
+                key={index}
+                className="bg-zinc-800 p-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl dark:hover:shadow-blue-500/50 hover:bg-zinc-700"
+              >
                 <h2 className="text-2xl font-bold text-blue-500">
-                  <a href={source.link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={source.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
                     {source.name}
                   </a>
                 </h2>

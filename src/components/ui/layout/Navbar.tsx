@@ -6,12 +6,14 @@ import React, { useState } from "react";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+
   const navLinks = [
     { href: "/#explications", label: "Explications" },
     { href: "/origines", label: "Origines" },
     { href: "/personalite", label: "Personalitée" },
-    { href: "/sources", label: "Sources" }, // Added link to Sources page
+    { href: "/sources", label: "Sources" },
+    { href: "/myths", label: "Mythes" }, // Added link to Myths page
   ];
 
   const toggleMobileMenu = () => {

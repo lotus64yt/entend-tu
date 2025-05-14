@@ -16,7 +16,7 @@ export function Article({
 }) {
   return (
     <article
-      className={`flex flex-col gap-4 items-center justify-center bg-zinc-800 p-8 rounded-lg shadow-lg ${className}`}
+      className={`flex flex-col gap-4 items-center justify-center bg-zinc-800 p-8 rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl dark:hover:shadow-blue-500/50 hover:bg-zinc-700 ${className}`}
       {...props}
     >
       <h2 className="text-2xl font-bold text-center">{title}</h2>

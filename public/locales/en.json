@@ -59,5 +59,14 @@
   "sources.nidcd.name": "National Institute on Deafness and Other Communication Disorders (NIDCD)",
   "sources.nidcd.description": "The NIDCD conducts and supports research on hearing, balance, taste, smell, voice, speech, and language.",
   "sources.actiononhearingloss.name": "Action on Hearing Loss (RNID)",
-  "sources.actiononhearingloss.description": "RNID provides support and information for people with hearing loss and tinnitus in the UK."
+  "sources.actiononhearingloss.description": "RNID provides support and information for people with hearing loss and tinnitus in the UK.",
+
+  "myths.title": "Myths about Deafness",
+  "myths.description": "Let's debunk some common misconceptions about deafness.",
+  "myths.myth3.name": "All deaf people read lips.",
+  "myths.myth3.description": "Lipreading is a skill that varies greatly among individuals and is not universally effective or relied upon by all deaf people. It can be challenging and often only provides partial understanding.",
+  "myths.myth4.name": "Deafness is a learning disability.",
+  "myths.myth4.description": "Deafness is a sensory impairment, not a learning disability. Deaf individuals have the same range of intelligence and learning capabilities as hearing individuals, though they may require different communication methods or accommodations.",
+  "myths.myth5.name": "Hearing aids restore normal hearing.",
+  "myths.myth5.description": "Hearing aids amplify sounds, making them more accessible, but they do not restore hearing to a 'normal' level or cure deafness. The effectiveness of hearing aids varies depending on the type and degree of hearing loss."
 }
