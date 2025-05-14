@@ -9,7 +9,7 @@ export default function Footer() {
           réservés.
         </p>
         <p>
-          Créé avec ❤️ par <Link href="https://lmcgroup.xyz/" className="text-blue-500 hover:underline">LMC Group</Link>
+          Créé avec ❤️ par <Link href="https://lmcgroup.xyz/" className="text-blue-500 hover:underline">LMC Group</Link> & <Link href="https://feuch-et-colo.lmcgroup.xyz/" className="text-blue-500 hover:underline">Feuch Et-Colo</Link> 
         </p>
       </div>
     </footer>
