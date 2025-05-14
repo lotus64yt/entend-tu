@@ -35,12 +35,12 @@ export default function MythsPage() {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <FadeIn>
-                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
                   {t("myths.title")}
                 </h1>
               </FadeIn>
               <FadeIn delay={0.1}>
-                <p className="mt-6 text-xl leading-8 text-gray-700 dark:text-gray-300">
+                <p className="mt-6 text-xl leading-8">
                   {t("myths.description")}
                 </p>
               </FadeIn>
@@ -70,7 +70,7 @@ export default function MythsPage() {
                         />
                       </svg>
                       <span>
-                        <strong className="font-semibold text-gray-900 dark:text-white">
+                        <strong className="font-semibold">
                           {t(myth.nameKey)}:
                         </strong>{" "}
                         {t(myth.descriptionKey)}
