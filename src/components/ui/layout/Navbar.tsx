@@ -11,8 +11,8 @@ export default function Navbar() {
     { href: "/#explications", label: "Explications" },
     { href: "/origines", label: "Origines" },
     { href: "/personalite", label: "Personalitée" },
-    { href: "/sources", label: "Sources" },
-    { href: "/myths", label: "Mythes" }, // Added link to Myths page
+    { href: "/myths", label: "Mythes" },{ href: "/sources", label: "Sources" },
+     // Added link to Myths page
   ];
 
   const toggleMobileMenu = () => {
